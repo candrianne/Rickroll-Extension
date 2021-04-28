@@ -2,8 +2,8 @@
 	"manifest_version": 2,
 	"name": "Rickroll Extension",
 	"author": "MSGuy01",
-	"description": "Goes through all the links on a webpage and changes some of them to rickrolls.",
-	"version": "1.3",
+	"description": "Goes through all the links on a webpage and changes some of them to rickrolls. This extension is just for fun! Fool yourself on your own computer, or play a prank on your friends and family.",
+	"version": "2.0",
 	"icons": {
 		"16": "Images/16.png",
 		"48": "Images/48.png",
