@@ -2,7 +2,7 @@
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     console.log(sender.tab ?
-                "from a content script:" + sender.tab.url :
+                "from a content script: " + sender.tab.url :
                 "from the extension");
     if (request.greeting == "extension") {
       sendResponse({farewell: localStorage.getItem("on")});
@@ -14,9 +14,8 @@ chrome.runtime.onMessage.addListener(
 );
 
 chrome.extension.onConnect.addListener(function(port) {
-    console.log("Connected .....");
     port.onMessage.addListener(function(msg) {
-        console.log("message recieved" + msg);
+        console.log("message recieved on background: " + msg);
         if (msg == "toggle") {
           if (localStorage.getItem("on") == "on") {
             console.log("EXTENSION IS NOW OFF");

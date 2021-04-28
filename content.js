@@ -11,6 +11,7 @@ chrome.runtime.sendMessage({greeting: "extension"}, function(response) {
     }
   }
 });
+
 chrome.runtime.sendMessage({greeting: "cheat"}, function(response) {
   console.log(response.farewell);
   localStorage.setItem("cheat", response.farewell);
@@ -24,7 +25,6 @@ chrome.runtime.sendMessage({greeting: "cheat"}, function(response) {
     }
   }
 });
-
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
