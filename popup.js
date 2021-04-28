@@ -18,10 +18,12 @@ var changeText = function() {
 }
 var changeCheatText = function() {
 	if (localStorage.getItem("cheat") == "off") {
+		document.getElementById("cheatText").innerHTML = "Cheat mode is: off";
 		document.getElementById("cheat").innerHTML = "Turn on cheat mode";
 	}
 	else {
-		document.getElementById("cheat").innerHTML = "Turn off cheat mode";
+		document.getElementById("cheat").innerHTML = "Turn off cheat mode";		
+		document.getElementById("cheatText").innerHTML = "Cheat mode is: on";
 	}
 }
 changeText();
