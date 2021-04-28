@@ -31,11 +31,11 @@ chrome.extension.onConnect.addListener(function(port) {
         else if (msg == "cheat") {
           if (localStorage.getItem("cheat") == "on") {
             console.log("CHEAT MODE IS NOW OFF");
-            localStorage.setItem("cheat, off");
+            localStorage.setItem("cheat", "off");
           }
           else {
             console.log("CHEAT MODE IS NOW ON");
-            localStorage.setItem("cheat, on");
+            localStorage.setItem("cheat", "on");
           }
           port.postMessage(localStorage.getItem("cheat"));
         }
