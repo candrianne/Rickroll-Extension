@@ -1,14 +1,17 @@
 # Rickroll-Extension
 Goes through all the links on a webpage and changes some of them to rickrolls.
 
-## FEATURES
+## Extension Download
+https://chrome.google.com/webstore/detail/rickroll-extension/ljkcmgibdnmdjdfpbggohpophnkiajfm/
+
+## Features
 -Browser will change 1/2 of the links on a webpage to rickrolls
 
 -Cheat mode will allow you to easily tell what links are rickrolls.
 
 -You can toggle cheat mode and the extension itself on the popup.
 
-## VERSION HISTORY
+## Version History
 v1.1 (10/6/2020): Added on/off button
 
 v1.2 (12/10/2020): Fixed on/off button and added icon
