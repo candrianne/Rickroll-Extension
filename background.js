@@ -19,13 +19,13 @@ chrome.extension.onConnect.addListener(function(port) {
         console.log("message recieved" + msg);
         if (msg == "toggle") {
           if (localStorage.getItem("on") == "on") {
-            console.log("NOW OFF");
+            console.log("EXTENSION IS NOW OFF");
             localStorage.setItem("on", "off");
           }
           else {
-            console.log("NOW ON");
+            console.log("EXTENSION IS NOW ON");
             localStorage.setItem("on", "on");
-          }
+          } 
           port.postMessage(localStorage.getItem("on"));
         }
         else if (msg == "cheat") {
