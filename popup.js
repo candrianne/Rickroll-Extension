@@ -1,6 +1,6 @@
 var sendToContent = function() {
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-	  chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+	  chrome.tabs.sendMessage(tabs[0].id, {greeting: "extension"}, function(response) {
 	    console.log("reloaded");
 	  });
 	});
@@ -48,5 +48,5 @@ document.getElementById("cheat").addEventListener("click", function() {
 		console.log("message recieved: " + msg);
 		changeCheatText();
 	});
-	//sendToContent();
+	sendToContent();
 });
